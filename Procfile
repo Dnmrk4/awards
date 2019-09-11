@@ -1,1 +1,1 @@
-web: gunicorn Awards.wsgi --log-file -
+web: gunicorn aawrds.wsgi --log-file -
