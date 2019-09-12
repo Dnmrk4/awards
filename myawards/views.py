@@ -16,7 +16,7 @@ from django.core.exceptions import ObjectDoesNotExist
 def welcome(request):
     current_user = request.user
     projects = Project.objects.order_by('-overall').all()
-    #top = projects[0]
+    top = projects[0]
     runners = Project.objects.all()[:4]
     try:
         current_user = request.user
